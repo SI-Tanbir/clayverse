@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Pages/Footer";
 import Navbar from "./Pages/Navbar";
 import Slider from "./Pages/Slider";
 
@@ -9,6 +10,8 @@ function App() {
     
       <Navbar></Navbar>
       <Slider></Slider>
+
+      <Footer></Footer>
 
     </>
   );
