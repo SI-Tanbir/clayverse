@@ -1,9 +1,27 @@
 
 
-import React from 'react'
-import { Link } from 'react-router'
+import React, { useContext } from 'react'
+import { Link, useNavigate } from 'react-router'
+import { AuthContext } from '../Provider/Authprovider'
+import toast, { ToastBar, Toaster } from 'react-hot-toast';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+
+  const handleSignout = () => {
+    Signout()
+        .then(() => {
+            toast.success('Successfully signed out!');
+            navigate('/');
+        })
+        .catch((error) => {
+            toast.error('Error signing out: ' + error.message);
+        });
+}
+
+
+  const {user,Signout} =useContext(AuthContext)
   return (
     <div className="navbar bg-[#E2725B] text-[#F9F6F0]">
     <div className="flex-1">
@@ -27,18 +45,39 @@ const Navbar = () => {
             Art & Craft
           </a>
         </li>
+
+
+        {user ? (
+    <li>
+        <button 
+            className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200"
+            onClick={handleSignout}
+            
+        >
+            Logout
+        </button>
+    </li>
+) : (
+    <>
         <li>
         
-            <Link  className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200" to={'/signin'}>Login</Link>
-            
-         
-        </li>
-        <li>
+        <Link  className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200" to={'/signin'}>Login</Link>
         
-            <Link  className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200" to={'/signup'}>Signup</Link>
-            
-          
-        </li>
+     
+    </li>
+
+    <li>
+        
+        <Link  className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200" to={'/signup'}>Signup</Link>
+        
+      
+    </li>
+    </>
+)}
+
+<Toaster position="top-right" />
+
+        
       </ul>
     </div>
   </div>
