@@ -24,7 +24,9 @@ const ArtAndCraft = () => {
               <h2 className="card-title">{r.item_name}</h2>
               <p>{r.short_description}</p>
               <div className="card-actions justify-end">
+                <button className="btn bg-red-500">add to cart</button>
                 <button className="btn btn-primary">More details</button>
+             
               </div>
             </div>
           </div>

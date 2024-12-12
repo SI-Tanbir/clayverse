@@ -3,6 +3,7 @@ import App from "../App";
 import { createBrowserRouter } from "react-router";
 import Signin from "../Pages/Signin";
 import Signup from "../Pages/Signup";
+import Mycartandlist from "../Pages/Mycartandlist";
 
 let router = createBrowserRouter([
     {
@@ -17,6 +18,14 @@ let router = createBrowserRouter([
     {path:'/signup'
       ,
       element:<Signup></Signup>
+    },
+    {path:'/cartlist',
+      element:<Mycartandlist></Mycartandlist>,
+      loader: () => {
+        // Add logic to load required data here
+        return fetch('http://localhost:3000/items') 
+          .then(response => response.json());
+      }
     }
   ]);
 

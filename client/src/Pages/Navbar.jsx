@@ -47,7 +47,16 @@ const Navbar = () => {
         </li>
 
 
-        {user ? (
+        {user ? ( <>
+
+
+          <li>
+          <Link  className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200" to={'/cartlist'}>Dashboard</Link>
+    </li>
+
+
+
+
     <li>
         <button 
             className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200"
@@ -57,6 +66,8 @@ const Navbar = () => {
             Logout
         </button>
     </li>
+
+    </>
 ) : (
     <>
         <li>
