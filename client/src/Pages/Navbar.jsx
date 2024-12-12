@@ -1,6 +1,7 @@
 
 
 import React from 'react'
+import { Link } from 'react-router'
 
 const Navbar = () => {
   return (
@@ -27,20 +28,16 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a 
-            href="#" 
-            className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200"
-          >
-            Login
-          </a>
+        
+            <Link  className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200" to={'/signin'}>Login</Link>
+            
+         
         </li>
         <li>
-          <a 
-            href="#" 
-            className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200"
-          >
-            Signup
-          </a>
+        
+            <Link  className="hover:text-[#508484] active:text-[#D4B483] transition-colors duration-200" to={'/signup'}>Signup</Link>
+            
+          
         </li>
       </ul>
     </div>

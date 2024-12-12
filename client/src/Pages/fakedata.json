@@ -1,0 +1,58 @@
+[
+    {
+      "image": "https://i.ibb.co.com/JR6ZPMr/media.jpg",
+      "item_name": "Handcrafted Clay Vase",
+      "subcategory_Name": "Clay Pottery",
+      "short_description": "A beautifully designed clay vase perfect for home decor.",
+      "price": "$25",
+      "rating": "4.5",
+      "processing_time": "2-3 days"
+    },
+    {
+      "image": "https://i.ibb.co.com/tbJjjPH/8d9de6d528b6cc2072658d7e2aaf1ef2.jpg",
+      "item_name": "Rustic Pottery Mug",
+      "subcategory_Name": "Clay Pottery",
+      "short_description": "Handmade pottery mug for your morning coffee.",
+      "price": "$15",
+      "rating": "4.7",
+      "processing_time": "3-5 days"
+    },
+    {
+      "image": "https://i.ibb.co.com/f4vS3By/il-fullxfull-1546039438-245e.jpg",
+      "item_name": "Decorative Clay Plate",
+      "subcategory_Name": "Clay Pottery",
+      "short_description": "A decorative clay plate with intricate patterns.",
+      "price": "$30",
+      "rating": "4.3",
+      "processing_time": "4-6 days"
+    },
+    {
+      "image": "https://i.ibb.co.com/nzWNtYN/1347-312ar.jpg",
+      "item_name": "Ceramic Serving Bowl",
+      "subcategory_Name": "Clay Pottery",
+      "short_description": "Handcrafted ceramic bowl ideal for serving meals.",
+      "price": "$20",
+      "rating": "4.8",
+      "processing_time": "2-4 days"
+    },
+    {
+      "image": "https://i.ibb.co.com/bKD0sCm/il-fullxfull-2554812899-9wua.jpg",
+      "item_name": "Pottery Pendant Necklace",
+      "subcategory_Name": "Clay Jewelry",
+      "short_description": "Unique pendant made from clay, perfect for casual wear.",
+      "price": "$12",
+      "rating": "4.6",
+      "processing_time": "1-3 days"
+    },
+    {
+      "image": "https://i.ibb.co.com/H7rkcvd/d982c35ca9b45c764f6c60039592008b.jpg",
+      "item_name": "Clay Animal Figurine",
+      "subcategory_Name": "Clay Sculptures",
+      "short_description": "Adorable clay figurine handcrafted with precision.",
+      "price": "$18",
+      "rating": "4.9",
+      "processing_time": "3-5 days"
+      
+    }
+  ]
+  
