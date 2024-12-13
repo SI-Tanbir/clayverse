@@ -1,4 +1,5 @@
 import "./App.css";
+import AllCart from "./Pages/AllCart";
 import ArtAndCraft from "./Pages/ArtAndCraft";
 import Footer from "./Pages/Footer";
 import Navbar from "./Pages/Navbar";
@@ -12,6 +13,7 @@ function App() {
       <Navbar></Navbar>
       <Slider></Slider>
       <ArtAndCraft></ArtAndCraft>
+      <AllCart></AllCart>
 
       <Footer></Footer>
 

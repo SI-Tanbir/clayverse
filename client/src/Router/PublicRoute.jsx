@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router";
 import Signin from "../Pages/Signin";
 import Signup from "../Pages/Signup";
 import Mycartandlist from "../Pages/Mycartandlist";
+import AllCart from "../Pages/AllCart";
 
 let router = createBrowserRouter([
     {
@@ -26,7 +27,12 @@ let router = createBrowserRouter([
         return fetch('http://localhost:3000/items') 
           .then(response => response.json());
       }
+    },
+    {
+      path:'/allcart',
+      element:<AllCart></AllCart>
     }
+
   ]);
 
   export default router;
